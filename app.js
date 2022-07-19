@@ -1,23 +1,19 @@
-//email
 const emailInput = document.querySelector(".email-input");
 const invalid = document.querySelector(".invalid");
 const inputbox = document.querySelector("input");
-const regex = /^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/;
-//submit
+let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 const submit = document.querySelector(".submit");
 
-//turn red when invalid
-emailInput.onkeydown = function () {
-    if (regex.test(emailInput.value)) {
+function check() {
+    if (emailInput.value.match(regex)) {
         invalid.innerText = "";
-        inputbox.style.borderColor = "";
+        inputbox.style.borderColor = 'lightblue';
     } else {
-        invalid.innerText = "Please provide a valid email address";
-        inputbox.style.borderColor = 'red';
-
         submit.addEventListener("click", function(event) {
         event.preventDefault();
-        console.log("Please provide a valid email address");
+        invalid.innerText = "Please provide a valid email address";
+        inputbox.style.borderColor = 'red';
         })
     }    
 }
