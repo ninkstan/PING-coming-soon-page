@@ -11,9 +11,9 @@ function check() {
         inputbox.style.borderColor = 'lightblue';
     } else {
         submit.addEventListener("click", function(event) {
-        event.preventDefault();
+        event.preventDefault();  
+        })
         invalid.innerText = "Please provide a valid email address";
         inputbox.style.borderColor = 'red';
-        })
     }    
 }
