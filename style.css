@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+/* typo */
+h1 {
+    font-size: 2.6rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 20px 0 30px 0;
+}
+
+b {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+p {
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    margin: 30px auto 50px auto;
+}
+
+/* image */
+.logo {
+    margin: 60px 0 35px 0;
+}
+
+.dashboard-img {
+    width: 55%;
+    margin: 30px auto 60px auto;
+}
+
+.nav {
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 200px;
+    display: flex;
+    margin: 10px auto;
+}
+
+#icon {
+    color: hsl(223, 87%, 63%);
+    width: 20px;
+    height: 20px;
+    padding: 6px 6px;
+    border-radius: 50%;
+}
+
+#icon:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+/* email subscription */
+
+.form {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-family: 'Libre Franklin', sans-serif;
+    padding-left: 25px;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 59%);
+    border-radius: 40px;
+    width: 24rem;
+    height: 3rem;
+    font-size: 15px;
+}
+    /* when email is invalid */
+    .invalid {
+        color: red;
+        font-size: 13px;
+        text-align: left;
+        margin-left: 24px;
+        font-style: italic;
+    }
+
+.box1 {
+    height: 80px;
+    display: grid;
+}
+
+.box2 {
+    height: 80px;
+}
+
+/* submit button */ 
+button {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px hsl(224, 41%, 79%);
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+
+/*less than 400px*/
+
+@media only screen and (max-width: 400px) {
+
+    .dashboard-img {
+        width: 90%;
+    }
+
+    /* email subscription */
+    .form {
+        padding: 10px 0 50px 0;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input {
+        padding-left: 25px;
+        width: 80%;
+        height: 45px;
+        margin: 0 auto;
+    }
+    
+        /* when email is invalid */
+        .invalid {
+            text-align: center;
+            margin: 0 auto;
+        }
+    
+    .box1 {
+        height: 0;
+        padding-bottom: 70px;
+    }
+    
+    .box2 {
+        height: 0;
+    }
+
+    /* submit button */
+    button {
+        width: 87%;
+        height: 46px;
+        margin: 0 auto;
+    }
+
+    /* typo */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+}
