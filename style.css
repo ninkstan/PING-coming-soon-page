@@ -127,7 +127,7 @@ button:active, button:hover {
 
 /*less than 400px*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     .dashboard-img {
         width: 90%;
@@ -143,7 +143,7 @@ button:active, button:hover {
     
     input {
         padding-left: 1.6rem;
-        width: 80%;
+        width: 20rem;
         height: 2.8rem;
         margin: 0 auto;
     }
@@ -165,8 +165,8 @@ button:active, button:hover {
 
     /* submit button */
     button {
-        width: 87%;
-        height: 3rem;
+        width: 21.7rem;
+        height: 2.8rem;
         margin: 0 auto;
     }
 
